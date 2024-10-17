@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <header class="feedback-header">
+            <h1>Feedback for Module 1</h1>
+        </header>
+        <main class="feedback-main">
+            <form id="feedback-form">
+                <label for="rating">Rate this module (1-5):</label>
+                <select id="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+    
+                <label for="comments">Your feedback:</label>
+                <textarea id="comments" rows="4" placeholder="Enter your feedback here"></textarea>
+    
+                <button type="submit">Submit Feedback</button>
+            </form>
+    
+            <!-- Area for feedback response from LLM -->
+            <div id="response-message" style="display: none;">
+                <h3>Thank you for your feedback!</h3>
+                <p id="llm-response"></p>
+            </div>
+        </main>
+    
+        <script src="feedback-script.js"></script>
+    </body>
+    
+</body>
+</html>
